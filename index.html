@@ -1,61 +1,91 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Thành viên</title>
-        <style>
-            body{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-            }
-            .khung{
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 50px;
-                text-align: center;
-                max-width: 1200px;
-            }
-
-            .anh{
-                width: 300px;
-            }
-
-            .anh img{
-                width: 100%;
-                height: 300px;
-                object-fit: cover;
-            }
-            .anh p{
-                font-size: 30px;
-                font-weight: bold;
-                margin-top: 10px;
-            }
-        </style>
-    </head>
-    <body>
-        <div class="khung">
-            <div class="anh">
-                <img src="https://i.postimg.cc/xdMx2RpY/9c02d5f6-4090-4cd2-86c9-363c01598437.jpg" alt="Nguyễn Thị Tường Vy">
-                <p>Nguyễn Thị Tường Vy</p>
-            </div>
-            <div class="anh">
-                <img src="https://i.postimg.cc/Zn2p0k0Q/f63599f0-dcdd-4016-8340-15037100a2c0.jpg" alt="Đỗ Thị Thanh Lam">
-                <p>Đỗ Thị Thanh Lam</p>
-            </div>
-            <div class="anh">
-                <img src="https://i.postimg.cc/s2sSM4D3/48ee3a6b-9889-4935-b483-9d832c7c1e00.jpg" alt="Nguyễn Đan Phụng Yến">
-                <p>Nguyễn Đan Phụng Yến</p>
-            </div>
-            <div class="anh">
-                <img src="https://i.postimg.cc/j5j7Xq79/259acaae-493a-411c-a9d6-535195105201.jpg" alt="Lê Mỹ Thu Thủy">
-                <p>Lê Mỹ Thu Thủy</p>
-            </div>
-            <div class="anh">
-                <img src="https://i.postimg.cc/ZRDyDkPq/03877ea4-5f5c-415e-ac49-ce0a96d1f907.jpg" alt="Phạm Nguyễn Bảo Thi">
-                <p>Phạm Nguyễn Bảo Thi</p>
-            </div>
-        </div>
-    </body>
+<head>
+    <meta charset="UTF-8">
+    <title>Thành viên</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            table-layout: fixed;
+            border: 1px solid black;
+        }
+        td {
+            border: 1px solid black;
+            font-size: 35px;
+            padding: 10px;
+        }
+        td:first-child {
+            width: 500px;
+        }
+        td:last-child {
+            width: 100%;
+            white-space: nowrap;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .trangchu {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding: 15px 0;
+        }
+        .trangchu a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            margin: 0 20px;
+        }
+        .trangchu a:hover {
+            text-decoration: underline;
+        }
+        .anh {
+            height: 500px; 
+            width: 500px; 
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <div class="trangchu">
+        <a href="">Trang chủ</a>
+        <a href="https://noname1267.github.io/Thi12a2thanhvien/">Thành viên</a>
+        <a href="https://noname1267.github.io/Thi12a2vinpearl/">Hoạt động</a>
+    </div>
+    <table>
+        <tr>
+            <td>
+                <img src="https://i.postimg.cc/xdMx2RpY/9c02d5f6-4090-4cd2-86c9-363c01598437.jpg" class="anh">
+            </td>
+            <td>Nguyễn Thị Tường Vy</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://i.postimg.cc/Zn2p0k0Q/f63599f0-dcdd-4016-8340-15037100a2c0.jpg" class="anh">
+            </td>
+            <td>Đỗ Thị Thanh Lam</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://i.postimg.cc/s2sSM4D3/48ee3a6b-9889-4935-b483-9d832c7c1e00.jpg" class="anh">
+            </td>
+            <td>Nguyễn Đan Phụng Yến</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://i.postimg.cc/j5j7Xq79/259acaae-493a-411c-a9d6-535195105201.jpg" class="anh">
+            </td>
+            <td>Lê Mỹ Thu Thủy</td>
+        </tr>
+        <tr>
+            <td>
+                <img src="https://i.postimg.cc/ZRDyDkPq/03877ea4-5f5c-415e-ac49-ce0a96d1f907.jpg" class="anh">
+            </td>
+            <td>Phạm Nguyễn Bảo Thi</td>
+        </tr>
+    </table>
+</body>
 </html>
